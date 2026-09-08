@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: secure-cbe-backend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: sqlite:////app/data/cbe.db
+      - key: CORS_ORIGINS
+        value: '["*"]'
+    disk:
+      name: cbe-data
+      mountPath: /app/data
+      sizeGB: 1
