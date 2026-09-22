@@ -45,7 +45,7 @@ class Settings(BaseSettings):
     # Environment). Leaving the default password in place is insecure.
     SEED_ADMIN: bool = True
     SEED_ADMIN_USERNAME: str = "Admin"
-    SEED_ADMIN_EMAIL: str = "mapolycbeadmin@mapoly"
+    SEED_ADMIN_EMAIL: str = "mapolycbeadmin@mapoly.com"
     SEED_ADMIN_PASSWORD: str = "AdminCBE123"
 
 
