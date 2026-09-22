@@ -44,9 +44,9 @@ class Settings(BaseSettings):
     # values via environment variables in production (Render ->
     # Environment). Leaving the default password in place is insecure.
     SEED_ADMIN: bool = True
-    SEED_ADMIN_USERNAME: str = "admin"
-    SEED_ADMIN_EMAIL: str = "admin@example.com"
-    SEED_ADMIN_PASSWORD: str = "ChangeMe123!"
+    SEED_ADMIN_USERNAME: str = "Admin"
+    SEED_ADMIN_EMAIL: str = "mapolycbeadmin@mapoly"
+    SEED_ADMIN_PASSWORD: str = "AdminCBE123"
 
 
 settings = Settings()
